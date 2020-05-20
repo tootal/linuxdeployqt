@@ -193,7 +193,7 @@ int main(int argc, char **argv)
         qInfo() << "         https://github.com/probonopd/linuxdeployqt/issues/340";
      } else {
         // openSUSE Leap 15.0 uses glibc 2.26 and is used on OBS
-        if (strverscmp (glcv, "2.27") >= 0) {
+        /*if (strverscmp (glcv, "2.27") >= 0) {
             qInfo() << "ERROR: The host system is too new.";
             qInfo() << "Please run on a system with a glibc version no newer than what comes with the oldest";
             qInfo() << "currently still-supported mainstream distribution (xenial), which is glibc 2.23.";
@@ -201,7 +201,7 @@ int main(int argc, char **argv)
             qInfo() << "For more information, please see";
             qInfo() << "https://github.com/probonopd/linuxdeployqt/issues/340";
             return 1;
-        }
+        }*/
     }
 
     if (argc < 2 || (firstArgument.startsWith("-"))) {
